@@ -1,0 +1,46 @@
+:root {
+  --button-background-color: #9b9aa1;
+  --button-font-color: #fff;
+  --button-border-color: #9b9aa1;
+}
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"],
+.btn {
+  background-color: var(--button-background-color);
+  border-radius: 0px;
+  border: 1px solid var(--button-border-color);
+  color: var(--button-font-color);
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: 600;
+  line-height: 1;
+  padding: 1em var(--base-spacing);
+  text-align: center;
+  text-decoration: none;
+  margin-bottom: var(--small-spacing);
+  display: block;
+ 
+  &:hover {
+    background-color: color-mod(var(--button-background-color) lightness(80%));
+    border: 1px solid color-mod(var(--button-background-color) lightness(80%));
+    color: color-mod(var(--button-background-color) contrast(80%));
+  }
+
+  &:focus {
+    border-color: color-mod(var(--button-background-color) lightness(50%));
+    outline: none;
+  }
+
+  &--full {
+    width: 100%;
+  }
+
+  &--small {
+    padding: calc(var(--small-spacing) / 2) calc(var(--base-spacing) / 2);
+  }
+
+
+}

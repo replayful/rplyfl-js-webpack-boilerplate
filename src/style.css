@@ -1,7 +1,10 @@
 
 @import "normalize.css";
 @import "./css/vars.css";
+@import "./css/typo.css";
 @import "./css/layout.css";
 @import "./css/form.css";
-@import "./css/typo.css";
+@import "./css/buttons.css";
+@import "./css/lists.css";
+@import "./css/media.css";
 
