@@ -1,8 +1,7 @@
 
 @import "normalize.css";
 @import "./css/vars.css";
+@import "./css/layout.css";
+@import "./css/form.css";
 @import "./css/typo.css";
 
-body{
-  background-color: var(--body-bg-color);
-}

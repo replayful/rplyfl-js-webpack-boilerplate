@@ -13,6 +13,7 @@ module.exports = {
         'color-mod-function': true,
         'custom-properties': {
           preserve: false,
+          importFrom: 'src/css/vars.css',
         },
         'custom-selectors': {
           preserve: false,
