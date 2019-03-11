@@ -1,7 +1,7 @@
 
 @import "normalize.css";
 @import "./css/vars.css";
-
+@import "./css/typo.css";
 
 body{
   background-color: var(--body-bg-color);
