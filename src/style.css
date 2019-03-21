@@ -44,6 +44,9 @@
  * @import "components/forms";
  */
 
+@import "components/buttons";
+@import "components/form";
+
 /**
  * This injects all of Tailwind's utility classes, generated based on your
  * config file.
@@ -64,3 +67,6 @@
  * @import "utilities/background-patterns";
  * @import "utilities/skew-transforms";
  */
+
+
+
