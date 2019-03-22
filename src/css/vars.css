@@ -1,13 +1,13 @@
 /* Default mobile first */
 
 /* Large phones */
-@custom-media --viewport-phone (min-width: 570px);
+@custom-media --bp-sm (min-width: 576px);
 /* Small devices (tablets, 768px and up) */
-@custom-media --viewport-tablet (min-width: 768px);
+@custom-media --bp-md (min-width: 768px);
 /* Medium devices (desktops, 992px and up) */
-@custom-media --viewport-desktop (min-width: 992px);
+@custom-media --bp-lg (min-width: 992px);
 /* Large devices (large desktops, 1200px and up) */
-@custom-media --viewport-big-desktop (min-width: 1200px);
+@custom-media --bp-xl (min-width: 1200px);
 
 
 :root{
