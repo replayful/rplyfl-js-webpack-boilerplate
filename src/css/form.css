@@ -1,8 +1,5 @@
 :root {
-  --form-background-color: #fff;
-  --form-box-shadow: inset 0 1px 3px rgba(#000, 0.06);
-  --form-box-shadow-focus: var(--form-box-shadow),
-    0 0 5px rgba(var(--action-color), 0.7);
+  --input-background-color: #fff;
   --label-font-color: #666;
 }
 
@@ -31,16 +28,18 @@ textarea {
 }
 
 select {
-  background-image: url("data:image/svg+xml;utf8,<svg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='24' height='24' viewBox='0 0 24 24'><path fill='#444' d='M7.406 7.828l4.594 4.594 4.594-4.594 1.406 1.406-6 6-6-6z'></path></svg>");
-  background-position: 98% 50%;
+  background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='darkgray'><polygon points='0,0 100,0 50,50'/></svg>") no-repeat;
+  background-size: 16px;
+  background-position: calc(100% - 10px) 65%;
   background-repeat: no-repeat;
   margin-bottom: var(--small-spacing);
-  padding: calc(var(--base-spacing) / 2);
+  padding: calc(var(--small-spacing) * 1.2);
   width: 100%;
   -webkit-appearance: none;
-  border-radius: 3px;
-  background-color: #fff;
-  /* border: var(--base-border); */
+  border-radius: var(--base-border-radius);
+  background-color: var(--input-background-color);
+  border: var(--base-border);
+  
 
   &:focus {
     border-color: #ccc;
@@ -69,15 +68,13 @@ textarea,
 [type="week"],
 input:not([type]) {
   appearance: none;
-  background-color: var(--form-background-color);
-  border: none;
-  border-radius: 0px;
-  /* box-shadow: var(--form-box-shadow); */
+  background-color: var(--input-background-color);
+  border: var(--base-border);
+  border-radius: var(--base-border-radius);
   box-sizing: border-box;
   margin-bottom: var(--small-spacing);
-  padding: var(--small-spacing);
+  padding: calc(var(--small-spacing) * 1.2);
   width: 100%;
-  color: var(--blue);
 
   &:hover {
     border-color: color-mod(var(--base-border-color) shade(20%));
@@ -85,12 +82,11 @@ input:not([type]) {
 
   &:focus {
     /* border-color: #ccc; */
-    /* box-shadow: var(--form-box-shadow-focus); */
     outline: none;
   }
 
   &:disabled {
-    /* background-color: shade(var(--form-background-color), 5%); */
+    /* background-color: shade(var(--input-background-color), 5%); */
     cursor: not-allowed;
 
     &:hover {

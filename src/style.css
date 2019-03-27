@@ -11,3 +11,11 @@
 
 
 
+.panel {
+  @util center;
+  width: 400px;
+  background-color: white;
+  padding: calc(var(--base-spacing) * 1.4);
+  border: var(--base-border);
+  border-radius: var(--base-border-radius);
+}
