@@ -111,7 +111,7 @@ input:not([type]) {
 [type="file"],
 select {
   &:focus {
-    /* outline: $focus-outline;
-    outline-offset: $focus-outline-offset; */
+    outline: var(--focus-outline);
+    outline-offset: var(--focus-outline-offset);
   }
 }

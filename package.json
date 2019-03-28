@@ -23,6 +23,8 @@
     "mini-css-extract-plugin": "^0.5.0",
     "normalize.css": "^8.0.1",
     "postcss-calc": "^7.0.1",
+    "postcss-color-palette": "0.0.3",
+    "postcss-easing-gradients": "^3.0.1",
     "postcss-import": "^12.0.1",
     "postcss-inherit": "^4.1.0",
     "postcss-inline-svg": "^3.1.1",

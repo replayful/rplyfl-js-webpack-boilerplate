@@ -12,6 +12,7 @@ html {
   color: var(--font-color);
   font-family: var(--base-font-family); 
   font-size: 100%;
+  line-height: var(--base-line-height);
 }
 
 :--heading {
