@@ -12,6 +12,7 @@ html {
   color: var(--font-color);
   font-family: var(--base-font-family); 
   font-size: 100%;
+  line-height: var(--base-line-height);
 }
 
 :--heading {
@@ -42,14 +43,21 @@ p {
 
 a {
   color: var(--action-color);
-  transition: color(var(--base-duration) var(--base-timing));
 
   &:hover {
-    color: color(var(--action-color) shade(25%));
+    color: color-mod(var(--action-color) shade(25%));
   }
 
   &:focus {
     outline: var(--focus-outline);
     outline-offset: var(--focus-outline-offset);
   }
+}
+
+hr {
+  border-bottom: var(--base-border);
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+  margin: var(--base-spacing) 0;
 }

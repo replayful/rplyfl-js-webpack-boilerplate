@@ -1,7 +1,13 @@
+
+
+/* Color Functions: https://github.com/jonathantneal/postcss-color-mod-function */
+/* Easing Gradients and editor: https://larsenwork.com/easing-gradients/ */
+/* Color palettes: https://mycolor.space/ */
+/* using colors from clrs.cc/mrmrs */
+/* Transfrom color names to mrmrs colors: https://github.com/zaim/postcss-color-palette */
+
+
 /* Default mobile first */
-
-
-
 /* Small  */
 @custom-media --sm (min-width: 576px);
 /* Medium devices (tablets, 768px and up) */
@@ -19,12 +25,6 @@ use the media queries above as such:
 
 :root{
 
-  /* Breakpoints */
-  --width-sm: 576px;
-  --width-md: 768px;
-  --width-lg: 992px;
-  --width-xl: 1200px;
-
   /* Sizes */
   --site-max-width: 1200px;
   
@@ -34,25 +34,34 @@ use the media queries above as such:
   --base-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   --base-header-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 
+
+  /* Line height */
+  --base-line-height: 1.5;
+  --heading-line-height: 1.2;
+
   /* Spacing */
   --base-spacing: 1.5em;
   --small-spacing: calc(var(--base-spacing) / 2);
 
   /* Colors */
+  --blue: blue;
+  --dark-gray: #333;
+  --medium-gray: #6a6a6a;
+  --light-gray: #ddd;
+
   /* https://github.com/jonathantneal/postcss-color-mod-function */
-  --body-bg-color: #dfdfdf;
-  --font-color: #6a6a6a;
+  --body-bg-color: var(--light-gray);
+  --font-color: var(--medium-gray);
   --font-heading-color:  #4a4a4a;
-  --action-color: blue;
+  --action-color: var(--blue);
 
   /* Borders */
   --base-border-color: #ccc;
   --base-border: 1px solid var(--base-border-color);
-  --base-border-radius: 3px;
+  --base-border-radius: 4px;
 
   /* Focus */
-  /* --focus-outline-color: color-mod(var(--action-color) tint(20%)); */
-  --focus-outline-color: var(--action-color);
+  --focus-outline-color: color-mod(var(--action-color) tint(30%));
   --focus-outline-width: 3px;
   --focus-outline: var(--focus-outline-width) solid var(--focus-outline-color);
   --focus-outline-offset: 2px;

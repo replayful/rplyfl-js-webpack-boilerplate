@@ -11,7 +11,16 @@ html {
 
 html,
 body {
-  background-color: var(--body-bg-color);
+  /* background-color: var(--body-bg-color); */
+  /* Editor Gradients: https://larsenwork.com/easing-gradients/ */
+  background: linear-gradient(
+    to bottom right,
+    hsla(360, 0%, 92%, 1),
+    cubic-bezier(0.54, 0, 0.49, 1),
+    hsla(210, 0%, 83%, 1)
+  );
+
+
   height: 100%;
   margin: 0;
   padding: 0;

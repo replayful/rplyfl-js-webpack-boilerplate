@@ -12,8 +12,6 @@ button,
   border: none;
   color: var(--button-font-color);
   cursor: pointer;
-  font-size: 1em;
-  line-height: 1;
   padding: 1em var(--base-spacing);
   text-align: center;
   text-decoration: none;
@@ -26,8 +24,8 @@ button,
   }
 
   &:focus {
-    border-color: color-mod(var(--button-background-color) lightness(50%));
-    outline: none;
+    outline: var(--focus-outline);
+    outline-offset: var(--focus-outline-offset);
   }
 
 
