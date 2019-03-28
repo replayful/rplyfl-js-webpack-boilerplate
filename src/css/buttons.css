@@ -12,8 +12,6 @@ button,
   border: none;
   color: var(--button-font-color);
   cursor: pointer;
-  font-size: 1em;
-  line-height: 1;
   padding: 1em var(--base-spacing);
   text-align: center;
   text-decoration: none;
