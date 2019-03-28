@@ -1,16 +1,29 @@
 /* Default mobile first */
 
-/* Large phones */
-@custom-media --viewport-phone (min-width: 570px);
-/* Small devices (tablets, 768px and up) */
-@custom-media --viewport-tablet (min-width: 768px);
-/* Medium devices (desktops, 992px and up) */
-@custom-media --viewport-desktop (min-width: 992px);
-/* Large devices (large desktops, 1200px and up) */
-@custom-media --viewport-big-desktop (min-width: 1200px);
+
+
+/* Small  */
+@custom-media --sm (min-width: 576px);
+/* Medium devices (tablets, 768px and up) */
+@custom-media --md (min-width: 768px);
+/* Large devices (desktops, 992px and up) */
+@custom-media --lg (min-width: 992px);
+/* xLarge devices (large desktops, 1200px and up) */
+@custom-media --xl (min-width: 1200px);
+/* 
+use the media queries above as such: 
+@media (--md) {}
+*/
+
 
 
 :root{
+
+  /* Breakpoints */
+  --width-sm: 576px;
+  --width-md: 768px;
+  --width-lg: 992px;
+  --width-xl: 1200px;
 
   /* Sizes */
   --site-max-width: 1200px;

@@ -1,4 +1,8 @@
+/* eslint-disable global-require */
+/* eslint-disable import/no-extraneous-dependencies */
 // eslint-disable-next-line no-undef
+
+
 module.exports = {
   plugins: {
     'postcss-import': {},
@@ -6,8 +10,9 @@ module.exports = {
     'postcss-inherit': {},
     'postcss-typescale': {},
     'postcss-responsive-type': {},
+    'postcss-utilities': {},
     'postcss-preset-env': {
-      stage: 1,
+      stage: 0,
       features: {
         'nesting-rules': true,
         'color-mod-function': true,
@@ -21,7 +26,9 @@ module.exports = {
         'custom-media-queries': true,
       },
     },
+    'postcss-pxtorem': {},
     'postcss-calc': {},
+    'postcss-round-subpixels': {},
     cssnano: {
       calc: { precision: 2 },
     },

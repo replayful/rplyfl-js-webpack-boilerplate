@@ -1,4 +1,5 @@
 
+
 @import "normalize.css";
 @import "./css/vars.css";
 @import "./css/typo.css";
@@ -6,5 +7,15 @@
 @import "./css/form.css";
 @import "./css/buttons.css";
 @import "./css/lists.css";
-@import "./css/media.css";
+@import "./css/media.css"; 
 
+
+
+.panel {
+  @util center;
+  width: 400px;
+  background-color: white;
+  padding: calc(var(--base-spacing) * 1.4);
+  border: var(--base-border);
+  border-radius: var(--base-border-radius);
+}
