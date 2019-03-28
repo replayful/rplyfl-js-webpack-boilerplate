@@ -16,6 +16,8 @@
   width: 400px;
   background-color: white;
   padding: calc(var(--base-spacing) * 1.4);
-  border: var(--base-border);
-  border-radius: var(--base-border-radius);
+  /* 3d look */
+  /* box-shadow: 1px 3px 30px -17px rgba(0,0,0,0.44); */
+  /* Flat */
+  border: 1px solid #dfdfdf;
 }
