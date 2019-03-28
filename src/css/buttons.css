@@ -3,6 +3,8 @@
   --button-font-color: #fff;
 }
 
+
+.btn,
 button,
 [type="button"],
 [type="reset"],
@@ -17,6 +19,7 @@ button,
   text-decoration: none;
   margin-bottom: var(--small-spacing);
   display: block;
+  line-height: var(--base-line-height);
 
   &:hover {
     background-color: color-mod(var(--button-background-color) lightness(30%));

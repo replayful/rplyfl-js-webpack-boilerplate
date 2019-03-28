@@ -43,11 +43,9 @@ p {
 
 a {
   color: var(--action-color);
-
   &:hover {
     color: color-mod(var(--action-color) shade(25%));
   }
-
   &:focus {
     outline: var(--focus-outline);
     outline-offset: var(--focus-outline-offset);
