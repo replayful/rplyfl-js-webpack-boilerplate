@@ -21,8 +21,8 @@ button,
   display: block;
 
   &:hover {
-    background-color: color-mod(var(--button-background-color) lightness(80%));
-    color: color-mod(var(--button-background-color) contrast(80%));
+    background-color: color-mod(var(--button-background-color) lightness(30%));
+    color: var(--button-font-color);
   }
 
   &:focus {
