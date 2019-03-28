@@ -40,11 +40,11 @@ select {
   background-color: var(--input-background-color);
   border: var(--base-border);
   
-
   &:focus {
-    border-color: #ccc;
-    outline: none;
+    outline: var(--focus-outline);
+    outline-offset: var(--focus-outline-offset);
   }
+
 }
 
 textarea {
@@ -81,21 +81,17 @@ input:not([type]) {
   }
 
   &:focus {
-    /* border-color: #ccc; */
-    outline: none;
+    outline: var(--focus-outline);
+    outline-offset: var(--focus-outline-offset);
   }
 
   &:disabled {
-    /* background-color: shade(var(--input-background-color), 5%); */
+    background-color: color-mod(var(--input-background-color) shade(5%));
     cursor: not-allowed;
-
-    &:hover {
-      /* border: $base-border; */
-    }
   }
 
   &::placeholder {
-    /* color: color-mod(--blue lightness(+5%)); */
+    color: color-mod(var(--label-font-color) lightness(60%));
   }
 }
 

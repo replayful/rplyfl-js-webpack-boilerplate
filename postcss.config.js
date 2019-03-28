@@ -8,6 +8,7 @@ module.exports = {
     'postcss-import': {},
     'postcss-nested': {},
     'postcss-inherit': {},
+    'postcss-inline-svg': {},
     'postcss-typescale': {},
     'postcss-responsive-type': {},
     'postcss-utilities': {},
