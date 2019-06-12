@@ -10,14 +10,32 @@
 @import "./css/media.css"; 
 
 
+/* .content{
+
+} */
+
 
 .panel {
-  @util center;
-  width: 400px;
+  
+  margin-top: calc(var(--base-spacing) * 2);
   background-color: white;
   padding: calc(var(--base-spacing) * 1.4);
   /* 3d look */
   /* box-shadow: 1px 3px 30px -17px rgba(0,0,0,0.44); */
   /* Flat */
   border: 1px solid #dfdfdf;
+  grid-column: col 2 / span 10;
+
+  @media (--md) {
+    grid-column: col 5 / span 4
+  }
+}
+
+
+
+.grid{
+  display: grid;
+  grid-template-columns: repeat(12, [col] 1fr);
+  grid-column-gap: 1em;
+  grid-row-gap: 1em;
 }
