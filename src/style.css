@@ -10,13 +10,8 @@
 @import "./css/media.css"; 
 
 
-/* .content{
-
-} */
-
 
 .panel {
-  
   margin-top: calc(var(--base-spacing) * 2);
   background-color: white;
   padding: calc(var(--base-spacing) * 1.4);
